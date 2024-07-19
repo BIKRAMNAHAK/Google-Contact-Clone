@@ -11,6 +11,13 @@
     color: #fff;
     border: 1px solid #333;
   }
+
+  .createform{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .title {
     font-size: 28px;

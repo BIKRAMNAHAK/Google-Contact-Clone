@@ -2,7 +2,7 @@ const initialState = {
     userContacts: [],
     Contact: null,
     isEdit: false,
-
+ 
 };
 
 function ContactsReducer(state = initialState, action) {
@@ -29,8 +29,7 @@ function ContactsReducer(state = initialState, action) {
                 isEdit: false,
             };
 
-       
-
+      
         default:
             return state; 
     }

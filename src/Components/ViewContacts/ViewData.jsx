@@ -33,11 +33,12 @@ function ViewData() {
     }, [isEdit, navigate]);
 
     return (
+
         <Container fluid>
             <table class="table table-striped  fixed-header">
             <thead>
                     <tr>
-                    {/* <th className='border border-dark text-center'>Id</th> */}
+                    
                         <th className='border border-dark text-center '>Photo</th>
                         <th className='border border-dark text-center'>Name</th>
                         <th className='border border-dark text-center w-25'>Email</th>
@@ -50,9 +51,9 @@ function ViewData() {
                     {
                     userContacts.map((data) => (
                         
-                        <tr key={data.id}>
+                        <tr key={data.id} className=''>
+                           
                             
-                            {/* <td className='border border-dark text-center col-2'>{data.id}</td> */}
                             <td className=' text-center '><div className='profile'><img src={data.avatar} alt="" /></div></td>
                             <td className=' text-center '>{data.Name}</td>
                             <td className=' text-center w-25'>{data.Email}</td>

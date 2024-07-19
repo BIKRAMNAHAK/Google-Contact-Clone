@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router';
 
 function EditContacts() {
     const { Contact } = useSelector(state => state.ContactsReducer);
+    
     const [EditContacts, setEditContacts] = useState(Contact || {});
     // const [isUpdate, setIsUpdate] = useState(false);
     const dispatch = useDispatch();

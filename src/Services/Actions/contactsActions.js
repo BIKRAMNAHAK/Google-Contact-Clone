@@ -23,6 +23,8 @@ const updateData = () =>{
         }
 }
 
+
+
 export const AddContactAsync = (data) => {
     return (dispatch) => {
         data.id = generateUniqueId({
@@ -101,6 +103,7 @@ export const DeleteAsync = (id) => {
 
 export const uploadImages = (file) => {
     return (dispatch) => {
+    
         const storageRef = ref(storage, `img/${file.name}`);
 
         return uploadBytes(storageRef, file)
